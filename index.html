@@ -1,0 +1,272 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>DW の 图形学/DL博客</title><meta name="author" content="Wei Duan"><meta name="copyright" content="Wei Duan"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="迷茫探索ing">
+<meta property="og:type" content="website">
+<meta property="og:title" content="DW の 图形学&#x2F;DL博客">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="DW の 图形学&#x2F;DL博客">
+<meta property="og:description" content="迷茫探索ing">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/img/avatar.jpg">
+<meta property="article:author" content="Wei Duan">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/avatar.jpg"><link rel="shortcut icon" href="/img/avatar.jpg"><link rel="canonical" href="http://example.com/index.html"><link rel="preconnect"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="/pluginsSrc/@fortawesome/fontawesome-free/css/all.min.css?v=6.5.1"><link rel="stylesheet" href="/pluginsSrc/@fancyapps/ui/dist/fancybox/fancybox.css?v=5.0.33" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Error',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: '/pluginsSrc/@egjs/infinitegrid/dist/infinitegrid.min.js?v=4.11.1',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'DW の 图形学/DL博客',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-05-31 10:12:52'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/my.css"><meta name="generator" content="Hexo 7.1.1"><link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet" /></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">23</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/%5C"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/todo/"><i class="fa-fw fas fa-list-alt"></i><span> ToDo</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/contact/"><i class="fa-fw fas fa-comments"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/bg.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="DW の 图形学/DL博客"><span class="site-name">DW の 图形学/DL博客</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/%5C"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/todo/"><i class="fa-fw fas fa-list-alt"></i><span> ToDo</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/contact/"><i class="fa-fw fas fa-comments"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">DW の 图形学/DL博客</h1><div id="site-subtitle"><span id="subtitle"></span></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/05/30/STAG4D/" title="STAG4D">STAG4D</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-05-30T02:43:18.000Z" title="Created 2024-05-30 10:43:18">2024-05-30</time></span></div><div class="content">Abstract
+文章将预训练的diffusion model和3D高斯组成高质量4D生成。多视角视频初始化是通过多视角diffusion model生成。为了保证初始化结果的时间一致性，引入了融合策略，将第一帧作为自注意力计算中的时间锚点。接着使用SDS优化4D高斯点云，为了使得4D高斯适用于生成任务，采用了自适应紧致性策略来消除高斯梯度的不稳定性形成鲁棒性优化。
+Method
+给定输入视频，先采用多视角diffusion model生成多视角一致的序列，提供时间和空间锚点。第二，接着使用多视角SDS和重建损失训练可变形的3D高斯。对于文本-4D生成，与text-to-image相结合即可。
+
+
+4D Presentation
+
+4D Gaussian Splatting：
+将4D场景建模为3D高斯点云，并附带一个基于平面六边形的变形场，即F=(S, t)，如下所示：
+F(S,t)=[Xt,st,rt,σ,ζ]F(S, t)=[X_t, s_t, r_t, \sigma, \zeta]
+F(S,t)=[Xt​,st​,rt​,σ,ζ]
+其中Xt=(xt,yt,zt),st,rtX_t ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/05/29/GVA/" title="GVA">GVA</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-05-29T03:45:57.000Z" title="Created 2024-05-29 11:45:57">2024-05-29</time></span></div><div class="content">Abstract
+文章主要目的为重建高真实感的人体，并实现皮肤表面和3D高斯的准确对齐。首先文章提出了一个姿势优化技术，通过对齐法线和轮廓图来提高手部和脚部的对齐。第二部分需要解决不平衡聚合和初始化偏差，作者会降低3D高斯化身的质量，具体通过表面指导的重初始化方法，来确保3D高斯点和化身表面的对齐。
+pipeline
+文章整体方法可以分为三个关键部分：第一部分为可驱动的3D高斯化身表示；第二部分是化身重建的姿势优化；第三部分是表面指导的高斯重初始化。
+
+
+3D高斯化身表示
+化身3D表示包含两部分{G, B}，其中G是3D高斯点的集合，其中包含了人体的形状和外观特点，B是一个可理解的骨架模型。
+利用SMPL-X模型高斯点G在标准空间中进行初始化(T-pose)，其中包括55个关节，22个控制身体姿态，15*2个关节负责左和右手的控制，3个关节控制头部。利用层次结构来实现姿态变化，并根据给定的姿势计算每个关节的姿态变换矩阵T(θ)T(\theta)T(θ)，对于每个高四点通过以下公式基于最近的4个关节计算姿势变化矩阵A：
+
+A(θ)=∑p=1pWp(μ)T(θ)A(\theta)=\dis ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/05/29/Ram-Avatar/" title="Ram-Avatar">Ram-Avatar</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-05-29T01:45:49.000Z" title="Created 2024-05-29 09:45:49">2024-05-29</time></span></div><div class="content">Abstract
+本篇文章目标为实现从单目视频输入中生成实时、照片级真实、可控制的全身数字人。RAM-Avatar利用两个两个统计模板分别建模面部表情和手势的变化，对于身体采用另一套身体模板并进入了一个稀疏计算的双向注意力模块，来完成对身体和四肢的高保真度渲染。文章设计了StyleUNet，其具备一个时间感知鉴别器能达到实时真实渲染。此外文章还迎入了一个动作分布对齐模块，用来弥补模型在训练和推理时的分布差异，生成训练分布之外的姿势。
+pipeline
+文章整体方法可以分为三个阶段，第一阶段利用双向注意力模块来增强穿衣服人体的细节；第二阶段运动分布对齐模块消除训练和测试阶段运动分布的差异提高鲁棒性；脸和手部建模实现对整个身体的控制。
+
+
+
+Achieving Full body Control
+使用人体模板投影后的神经纹理会忽略屌身体细粒度的部分如人脸表情和手势参数，为了解决这个问题，利用FaceVerse获取相关人脸参数，作者采用卷积神经忘了来从合成的人脸网格中提取特征。为了建模复杂的手势通过建立手部关键点之间的联系得到手部特征图。将脸部特征、手部特征和身体神经纹理特征相结合成为全身的 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/05/21/GaussianAvatar/" title="GaussianAvatar">GaussianAvatar</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-05-21T12:34:17.000Z" title="Created 2024-05-21 20:34:17">2024-05-21</time></span></div><div class="content">pipeline
+文章给定SMPL或SMPL-X后，在其表面上进行采样，并记录其在UV位置图上的位置，得到的位置通过pose encoder得到姿态特征。接着一个可优化的特征用于捕捉人体的粗糙外观，其余姿态特征按像素对齐。两个对齐的特征会作为高斯参数解码器的输入，预测每个点的偏移量、颜色和缩放尺度。这些预测结果余固定的旋转q和占用值共同构成标准空间下的可动画3D高斯。
+
+
+Animatable 3D Gaussians
+
+G(β,θ,D,P)=Splatting(W(D,J(β),θ,Ω),P)G(\beta, \theta, D, P)=Splatting(W(D, J(\beta), \theta, \Omega), P)
+G(β,θ,D,P)=Splatting(W(D,J(β),θ,Ω),P)
+其中W是一个标准LBS函数，用于恢复3D高斯分布，D=T(β\betaβ)+dT代表标准空间中3D高斯的位置，在模板表面T(β\betaβ)添加矫正的点偏移dT，P表示3D高斯除位置以外的参数。β\betaβ和θ\thetaθ是形状和姿势参数，J(β)J(\beta)J(β)可以输出3D ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/05/20/GSM/" title="GSM">GSM</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-05-20T07:24:39.000Z" title="Created 2024-05-20 15:24:39">2024-05-20</time></span></div><div class="content">Abstract
+原本借助3D GAN的生成框架速度较慢，一方面碍于GAN的训练速度，另一方面体渲染本身很慢，并且需要多视角的2D数据。文章提出Gaussian Shell Maps(GSMs)将SOTA的生成式框架与高斯渲染框架相结合，利用多层shell-based架构来实现链接。生成器生成的堆叠特征被映射到shells，其描述了标准姿势下人体模板表面膨胀和非膨胀的版本。作者没有直接渲染shells，而是利用shells的特征被编码到纹理特征中的特性，从其中采样3D高斯。所构建的框架不需要视图一致性的上采样器，并且生产出512*512分辨率的图像。
+先验
+
+
+3D高斯
+
+
+Shell Maps
+在计算机图形学中用来描述贴近模型表面的细节。Shell maps使用3D纹理图来存储细粒度的特征，本质上是UV图延伸，能够形成shell-like体积中每个点与3D纹理贴图的一一映射，有助于在纹理空间进行有效的建模和渲染。shell体积是在基础网格的基础上， 在保证拓扑结构和避免自交的前提下，沿着法线方向做偏差。体积被划分成一系列四面体，连接着基础网格和偏移网格顶点。通过查询四面体和它对应的重 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/05/16/dreamGaussian4D/" title="dreamGaussian4D">dreamGaussian4D</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-05-16T13:33:16.000Z" title="Created 2024-05-16 21:33:16">2024-05-16</time></span></div><div class="content">Introduction
+
+使用可形变的高斯溅射表示4D内容生成，其显式的稀疏转换建模显著降低了优化时间
+框架为image-to-4D，能够支持更多的可控和多样性的3D动作
+提出了一个video-to-video的纹理细化策略，进一步提高导出网格的动画质量
+
+pipeline
+主要包含三部分内容，第一部分初始化阶段，设计一个DreamGaussian的变体，从输入图像中创建3D高斯。第二阶段动态生成，从输入图像中生成驱动视频基于3D高斯优化一个依赖时间的变形场。最后阶段为一个网格细化将4D高斯转化为可动画的网格序列，并使用一个video-to-video的pipeline进行纹理贴图的一致性细化。
+
+
+
+DreamGaussianHD for Static Generation
+原本的DreamGaussian对于静态模型没有看到的区域会产生显著的模糊，主要从2个方面进行改善。
+首先是进行多视角优化，DreamGaussian再每次对SDS优化迭代时随机采样一个视角，导致了不平衡的优化与收敛，在这里采样了16个视角来生成3D高斯未见区域的高质量几何。
+其次，DreamGaussian从 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/04/28/HumanGaussian/" title="HumanGaussian">HumanGaussian</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-04-28T01:19:08.000Z" title="Created 2024-04-28 09:19:08">2024-04-28</time></span></div><div class="content">Abstract
+现有方法通过score distillation sampling(SDS)的方式（详情见DreamDiffusion）优化例如网格、神经场等3D表示，会导致细节不足和训练时间过长。本文将提出一个生成细粒度几何和真实外观的3D人。本文提出了一个结构感知的SDS，同时优化人的几何和外观。其从颜色和深度空间中得到的多模态score function能够，通过高斯密集化和修剪过程来提炼信息。此外，通过将SDS解耦成一个噪声更大的生成分数和一个更加干净的分类分数，得到退火负提示来解决过饱和的问题。仅在修剪阶段基于高斯大小进一步消除浮动伪影。
+pipeline
+
+先验知识
+1.1 SMPL-X包含10475个顶点和54个关键点
+1.2 Score Distillation Sampling(SDS)
+这是一种提取二维预训练先验用于优化3D表示的方法，假设将某个场景参数化为θ\thetaθ并且使用可谓渲染函数g(·)得到图像x=g(θ)x=g(\theta)x=g(θ)。通过将样本推向真实数据分布的密集区域，跨越所有噪声水平，使得每个摄像机视角的渲染图像更像是从指导扩散模型ϕ\p ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/04/28/HOLODIFFUSION/" title="HOLODIFFUSION">HOLODIFFUSION</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-04-28T01:08:05.000Z" title="Created 2024-04-28 09:08:05">2024-04-28</time></span></div><div class="content"></div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/04/23/GPS-Gaussian/" title="GPS-Gaussian">GPS-Gaussian</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-04-23T08:30:30.000Z" title="Created 2024-04-23 16:30:30">2024-04-23</time></span></div><div class="content">文章贡献
+
+引入了可以繁华的3D高斯方法，通过使用在2D源图像上定义的像素感知的高斯参数图，在前向过程中生成3D高斯。
+整个框架完全可微，包括一个深度估计模块和一个高斯参数回归模块。中间预测的深度图能够连接两个组件，让他们一起进行联合训练。
+提出了实时NVS(新颖视角合成)通过直接回归高斯参数图，实现2K图像渲染
+
+先验——3D高斯
+该模型显示地建模静态3D场景，以点作为基元，每个点被参数化为一个可以放缩地高斯，包括协方差矩阵和均值，如下所示：
+
+为了能够进行梯度下降，协方差矩阵被分解为缩放矩阵S和旋转矩阵R
+Σ=RSSTRT(2)\Sigma=RSS^TR^T           (2)
+Σ=RSSTRT(2)
+通过视角转换矩阵W和投影百年换地仿射近似地雅可比矩阵J，2D空间中的协方差矩阵可以被计算为
+
+接着使用基于点地alpha混合渲染得到颜色，其中cic_ici​时每个点的颜色，αi\alpha_iαi​是密度，其通过将2D高斯(协方差如公式3)学习到的没点不透明度相乘后推断而出。颜色通过球谐系数定义。总之3D高斯将每个点定义为五项属性。1）每个点的3D位置X，2）由SH定义的颜 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/04/23/ECON/" title="ECON">ECON</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-04-23T02:12:19.000Z" title="Created 2024-04-23 10:12:19">2024-04-23</time></span></div><div class="content">Abstract
+IF（隐式函数）在处理不常见的姿势或服装时，这些方法可能会产生不理想的结果，比如身体部分分离或形状变形。显示模型限制了几何恢复(比如穿着宽松裙子等)。ECON整体分为三步，先为一个穿衣服的人推断一个详细的2D法线图；第二部恢复2.5D的前后表面(d-BiNI)，这些表面准确但不完整，需要利用SMPL-X网格将这些表面对齐；第三步使用inpaint技术对d-BiNI表面之间缺少的几何进行填补。
+pipeline
+输入为RGB图像，ECON从图像中估计前后法线图，之后转化为前后的部分表面，最后通过IF-Nets+来填补缺失的几何，整体的pipeline如下：
+
+
+Detailed normal map prediction
+
+整体借助ICON框架，可以估计详细的正面法线图NFc^\hat{N_F^c}NFc​^​，同样为ICON的背后法线预测器添加了MRF loss，从而生成详细的背面法线图N^Nc\hat{N}_N^cN^Nc​。ICON的详细法线估计依赖于SMPLX模型渲染的法线图，因此首先估计(PIXIE)图像中的SMPLX模型MbM^bMb，并通过损失函数进行约束 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="page-number" href="/page/3/#content-inner">3</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Wei Duan</div><div class="author-info__description">迷茫探索ing</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">23</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/05/30/STAG4D/" title="STAG4D">STAG4D</a><time datetime="2024-05-30T02:43:18.000Z" title="Created 2024-05-30 10:43:18">2024-05-30</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/05/29/GVA/" title="GVA">GVA</a><time datetime="2024-05-29T03:45:57.000Z" title="Created 2024-05-29 11:45:57">2024-05-29</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/05/29/Ram-Avatar/" title="Ram-Avatar">Ram-Avatar</a><time datetime="2024-05-29T01:45:49.000Z" title="Created 2024-05-29 09:45:49">2024-05-29</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/05/21/GaussianAvatar/" title="GaussianAvatar">GaussianAvatar</a><time datetime="2024-05-21T12:34:17.000Z" title="Created 2024-05-21 20:34:17">2024-05-21</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/05/20/GSM/" title="GSM">GSM</a><time datetime="2024-05-20T07:24:39.000Z" title="Created 2024-05-20 15:24:39">2024-05-20</time></div></div></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/%E8%B0%83%E7%A0%94/" style="font-size: 1.1em; color: #999">调研</a> <a href="/tags/Human-Motion/" style="font-size: 1.5em; color: #99a9bf">Human Motion</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/05/"><span class="card-archive-list-date">May 2024</span><span class="card-archive-list-count">6</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/04/"><span class="card-archive-list-date">April 2024</span><span class="card-archive-list-count">10</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/03/"><span class="card-archive-list-date">March 2024</span><span class="card-archive-list-count">6</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/01/"><span class="card-archive-list-date">January 2024</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">23</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Update :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-05-31T02:12:52.338Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By Wei Duan</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="/pluginsSrc/@fancyapps/ui/dist/fancybox/fancybox.umd.js?v=5.0.33"></script><div class="js-pjax"><script>window.typedJSFn = {
+  init: (str) => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: (subtitleType) => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        getScript('/pluginsSrc/typed.js/dist/typed.umd.js?v=2.1.0').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  }
+}
+</script><script>function subtitleType () {
+  if (true) {
+    typedJSFn.init([""])
+  } else {
+    document.getElementById("subtitle").textContent = ""
+  }
+}
+typedJSFn.run(subtitleType)</script></div><script src="/js/my.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading the Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.13.0"></script></div></div></body></html>
